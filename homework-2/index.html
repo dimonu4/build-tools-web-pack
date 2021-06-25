@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datetime app</title>
+    <script type="module" src="./src/index.js"></script>
+</head>
+
+<body>
+    <button type="submit" id="date_btn">Date calc</button>
+    <button type="submit" id="timer_btn">Timer</button>
+    <form id="timer" style="display: none;">
+        <h3>Timer</h3>
+        <input id="timer_field" type="time" value="01:00">
+        <button id="start_btn">Start</button>
+        <button id="stop_btn">Stop</button>
+    </form>
+    <form id='datecalc' style="display: none;">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата</strong>
+            <input type="date" name="firstDate">
+        </label>
+        <label>
+            <strong>Вторая дата</strong>
+            <input type="date" name="secondDate">
+        </label>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="datecalc_result"></p>
+    </form>
+</body>
+
+</html>
